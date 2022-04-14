@@ -2,7 +2,7 @@
 import { NEW_TIMER, TOGGLE_TIMER } from "../actions";
 import Timer from '../Timer';
 
-const timersReducer = (state = [], action) => {
+const timerReducer = (state = [], action) => {
     switch (action.type) {
         case NEW_TIMER:
             const name = action.payload.name ? action.payload.name : `Timer ${state.length}`
@@ -22,4 +22,4 @@ const timersReducer = (state = [], action) => {
     }
 }
 
-export default timersReducer;
+export default timerReducer;
